@@ -1,10 +1,9 @@
-# Aplikasi Web "XYZ"
+# Aplikasi Forum berbasis Web NodeBB dengan teknologi NodeJS
 
 
 ## Sekilas Tentang
 
-Deskripsi singkat tentang aplikasi tsb.
-
+NodeBB adalah aplikasi komunitas berbasis forum web. NodeBB berbasis pada NodeJS dan dibuat dengan sistem caching redis dan database MongoDB. NodeBB memiliki banyak fitur seperti notifikasi realtime dan interaksi langsung.
 
 ## Instalasi
 
