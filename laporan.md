@@ -7,8 +7,22 @@ NodeBB adalah aplikasi komunitas berbasis forum web. NodeBB berbasis pada NodeJS
 
 ## Instalasi
 
-- Prasyarat, apa saja yang harus diinstal sebelumnya.
-- Langkah instalasi dalam CLI.
+### Requirements
+
+Untuk menginstall NodeBB diperlukan aplikasi berikut yang harus diinstall
+- Node.JS versi 6 keatas.
+- Redis versi 6.8.9 atau lebih atau MongoDB versi 6.6 atau lebih sebagai database dari aplikasi ini
+- Nginx versi 1.3.13 keatas sebagai proxy forwarder agar setiap aplikasi yang diakses domain NodeBB pada port 80 akan mengakses NodeBB
+
+### Persiapan
+
+Pada laporan ini kami menggunakan operating sistem Ubuntu Server 18.04 pada Virtual Box.
+
+### Langkah Langkah Instalasi
+***
+ntar isiin dari sini
+https://docs.nodebb.org/installing/os/ubuntu/
+***
 
 
 ## Konfigurasi (opsional)
@@ -23,15 +37,16 @@ Plugin untuk fungsi tambahan
 - etc.
 
 
-##  Maintenance (opsional)
+##  Maintenance
 
-Setting tambahan untuk maintenance secara periodik, misalnya:
-- hapus tmp sehari sekali
-- buat backup seminggu sekali
-- etc.
+### Update
+***
+ntar isiin dari sini
+https://docs.nodebb.org/configuring/upgrade/
+***
 
 
-## Otomatisasi (opsional)
+## Otomatisasi
 
 Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
 
@@ -54,3 +69,7 @@ Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
 ## Referensi
 
 Cantumkan tiap sumber informasi yang anda pakai.
+https://docs.nodebb.org/installing/os/ubuntu/
+https://nodebb.org/
+https://github.com/NodeBB/NodeBB
+https://www.howtoforge.com/how-to-install-nodebb-forum-on-ubuntu-1804-lts/
