@@ -183,3 +183,6 @@ https://docs.nodebb.org/installing/os/ubuntu/
 https://nodebb.org/
 https://github.com/NodeBB/NodeBB
 https://www.howtoforge.com/how-to-install-nodebb-forum-on-ubuntu-1804-lts/
+https://www.slant.co/versus/2789/2791/~discourse_vs_nodebb
+https://community.nodebb.org/topic/10827/why-i-chose-to-use-nodebb-over-phpbb-discourse-mybb-and-other-forums
+https://www.reddit.com/r/webdev/comments/415nlp/discourse_flarum_nodebb_oh_my/
