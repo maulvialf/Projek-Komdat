@@ -196,9 +196,9 @@ $ ./nodebb stop
 ```
 
 #### Backup Data
-Selanjutnya, lakukan backup data Redis ```.rdb```. Database utama Redis tersimpan di ```/var/lib/redis/dump.rdb```.
+Selanjutnya, lakukan backup data. Jika anda menggunakan Redis ```.rdb```. Pindahkan database utama Redis yang tersimpan di ```/var/lib/redis/dump.rdb``` ke tempat lain yang aman.
 
-Setelah itu, lakukan back up pada MongoDB yang didahului dengan mematikan MongoDB
+Jika menggunakan MongoDB, lakukan back up dimulai dengan mematikan MongoDB
 
 ```
 sudo service mongodb stop
