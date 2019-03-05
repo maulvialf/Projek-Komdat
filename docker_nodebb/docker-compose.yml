@@ -1,0 +1,13 @@
+mongo:
+  image: mongo:3.2
+  ports:
+    - 27017:27017
+
+nodebb:
+  image: registry.gitlab.com/recalbox/ops/nodebb/nodebb:latest
+  links:
+    - mongo:mongo
+  env_file:
+    - ./nodebb.env
+  ports:
+    - 4567:4567
