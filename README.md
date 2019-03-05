@@ -232,15 +232,53 @@ Jika upgrade berhasil, jalankan kembali NodeBB. NodeBB yang dijalankan adalah ve
 ## Otomatisasi
 ### Instalasi & Konfigurasi
 
-Untuk melakukan otomasi pada penginstalan nodebb, terdapat docker-compose file pada dokumentasi program.
+Untuk melakukan otomasi pada penginstalan nodebb, terdapat docker-compose file pada dokumentasi program. Keuntungan dengan menggunakan docker adalah penginstalan dapat dilakukan dengan scripting dan apabila terdapat bug pada nodebb tidak akan mempengaruhi server karena berada dalam image sendiri.
 
-`cd nodebb_docker`
+Untuk menggunakan docker terlebih dahulu install docker pada server
+```
+sudo apt install docker -y
+```
 
-Isikan pada env
+Masuk kedalam directory docker_nodebb
+```
+cd docker_nodebb
+```
 
-`docker-compose up`
+Isikan pada nodebb.env dengan konfigurasi dari nodebb yang kita inginkan
+```
+# agar bisa diakses secara remot
+NODEBB_URL=http://0.0.0.0
+NODEBB_PORT=8000
+NODEBB_SECRET=asupersecret
+NODEBB_PLUGINLIST=
+NODEBB_WEBSOCKETONLY=false
+MONGO_HOST=mongo
+MONGO_PORT=27017
+MONGO_USERNAME=nodebb
+MONGO_PASSWORD=nodebb
+MONGO_DATABASE=nodebb
+ADMIN_USERNAME=admin
+ADMIN_PASSWORD=admin123
+ADMIN_EMAIL=maulvi_alfansuri@apps.ipb.ac.id
+SSMTP_DOMAIN=smtp.gmail.com
+SSMTP_EMAIL=maulvi_alfansuri@apps.ipb.ac.id
+SSMTP_HOST=smtp.gmail.com
+SSMTP_PORT=465
+SSMTP_PASSWORD=disensorgan
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+S3_UPLOADS_BUCKET=
+S3_UPLOADS_HOST=
+```
 
-
+Jika konfigurasi sudah diisi. Run docker dengan perintah
+```
+docker-compose up
+```
+Jika mongo db sudah dimiliki diluar docker, anda dapat menggunakan mongo db luar tanpa harus menginstall mongoddb didalam docker. Ini berguna apabila ingin menggunakan database lama untuk migrasi perangkat ke dalam docker
+```
+sudo docker run --env-file=./nodebb.env -ti digitallumberjack/docker-nodebb:latest
+```
 
 Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
 
@@ -267,7 +305,7 @@ Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
 
 ### Bandingkan dengan aplikasi web kelompok lain yang sejenis
   Perbandingan Nodebb dengan discourse
-  1.   Untuk kemudahan penginstalan dan penggunaan Nodebb lebih unggul dibandingkan discourse dikarenakan penginstalan discourse menuntut pengguna telah memahami pengetahuan tentang server. Sedangkan dengan nodebb penginstalan tidak menuntut pengetahuan server semendalam saat menginstall discourse.
+  1. Untuk kemudahan penginstalan dan penggunaan Nodebb lebih unggul dibandingkan discourse dikarenakan penginstalan discourse menuntut pengguna telah memahami pengetahuan tentang server. Sedangkan dengan nodebb penginstalan tidak menuntut pengetahuan server semendalam saat menginstall discourse.
   2. Discourse tidak memiliki _free version_ sehingga jika ingin menggunakan discourse pengguna harus membeli terlebih dahulu, sedangkan nodebb memiliki _free version_ sehingga kita dapat mencoba terlebih dahulu apakah cocok atau tidak.
   3. Nodebb memiliki fitur live chat, sedangkan discourse tidak. Sehingga dengan menggunakan nodebb forum akan menjadi lebih menarik dan interaktif.
   4. Nodebb mempermudah pengguna untuk menghubungkan forum/post pengguna dengan social media sehingga lebih menarik untuk ditelusuri.
