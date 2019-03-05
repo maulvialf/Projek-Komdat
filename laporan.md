@@ -251,9 +251,22 @@ Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
 ## Pembahasan
 
 - Pendapat anda tentang aplikasi web ini
-	- pros:
+	    - pros: 
+       1. Integrasi sosial yang mudah, dengan node bb pengguna dapat dengan mudah membagikan konten dengan social media seperti facebook atau twitter. Sehingga mempermudah memperkenalkan dan mempublikasikan forum disocial media yang diinginkan.
+       2. Optimalisasi yang fleksibel, dengan menggunakan nodebb forum secara otomatis akan dioptimalkan _mobile view_ sehingga forum dapat diakses dimana saja, kapan saja, dengan segala device.
+       3. Nodebb juga dapat menerjemahkan forum  hingga dengan 50 bahasa, sehingga forum dapat menjangkau seluruh dunia tanpa batasan bahasa.
+       4. Dengan Nodebb forum juga dapat mencantumkan file media seperti foto, video, dan rekaman suara. Sehingga post didalam forum dapat menjadi jauh lebih menarik.
 	- cons:
+       1. Harga yang termasuk mahal, hosting menggunakan nodebb tidak terbilang murah. _Open source version_ menuntut pengguna untuk memahami program tersebut atau _Not user friendly_ .
+       2. Tidak ada pengembalian, sehingga bila tidak menjadi hosting uang yang telah diberikan tidak akan dikembalikan kepada client
+
 - Bandingkan dengan aplikasi web kelompok lain yang sejenis
+  Perbandingan Nodebb dengan discourse
+  1.   Untuk kemudahan penginstalan dan penggunaan Nodebb lebih unggul dibandingkan discourse dikarenakan penginstalan discourse menuntut pengguna telah memahami pengetahuan tentang server. Sedangkan dengan nodebb penginstalan tidak menuntut pengetahuan server semendalam saat menginstall discourse.
+  2. Discourse tidak memiliki _free version_ sehingga jika ingin menggunakan discourse pengguna harus membeli terlebih dahulu, sedangkan nodebb memiliki _free version_ sehingga kita dapat mencoba terlebih dahulu apakah cocok atau tidak.
+  3. Nodebb memiliki fitur live chat, sedangkan discourse tidak. Sehingga dengan menggunakan nodebb forum akan menjadi lebih menarik dan interaktif.
+  4. Nodebb mempermudah pengguna untuk menghubungkan forum/post pengguna dengan social media sehingga lebih menarik untuk ditelusuri.
+  5. Memiliki server diberbagai lokasi, sehingga lebih mudah diakses oleh para pengguna.
 
 
 ## Referensi
