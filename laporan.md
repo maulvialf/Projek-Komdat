@@ -198,7 +198,12 @@ $ ./nodebb stop
 #### Backup Data
 Selanjutnya, lakukan backup data Redis ```.rdb```. Database utama Redis tersimpan di ```/var/lib/redis/dump.rdb```.
 
-Setelah itu, lakukan back up pada MongoDB yang didahului dengan mematikan MongoDB ```sudo service mongodb stop```.
+Setelah itu, lakukan back up pada MongoDB yang didahului dengan mematikan MongoDB
+
+```
+sudo service mongodb stop
+```
+
 Jalankan ```mongodump``` untuk mem-backup MongoDB. Perintah tersebut akan membuat struktur direktori yang bisa di-restore.
 
 Backup selanjutnya dilakukan pada Avatar
@@ -206,6 +211,30 @@ Backup selanjutnya dilakukan pada Avatar
 $ cd /path/to/nodebb/public
 $ tar -czf ~/nodebb_assets.tar.gz ./uploads
 ```
+
+#### Mengambil kode terbaru
+
+Untuk naik ke versi yang lebih tinggi, misal: v0.2 ke v0.4.3
+```
+$ git fetch
+$ git checkout v0.4.x
+$ git merge origin/v0.4.x
+```
+
+Untuk naik ke versi yang masih satu branch, misal: v0.2.1 ke v0.2.2
+```
+$ git fetch
+$ git reset --hard origin/v0.2.x
+```
+
+#### Menjalankan skrip upgrade NodeBB
+Untuk NodeBB v0.3.0 ke atas, jalankan perintah berikut:
+```
+$ ./nodebb upgrade
+```
+
+
+Jika upgrade berhasil, jalankan kembali NodeBB. NodeBB yang dijalankan adalah versi terbaru.
 
 ## Otomatisasi
 
