@@ -102,7 +102,7 @@ Kemudian, menginstall modul untuk npm.
 ```
 $ ./nodebb setup
 ```
-Sejumlah pertanyaan akan muncul. Setting default untuk local server listening pada port default ```4567``` dengan MongoDB listening pada port ```27017```. 
+Sejumlah pertanyaan akan muncul. Setting default untuk local server listening pada port default ```8000``` dengan MongoDB listening pada port ```27017```. 
 Ketika diminta, pastikan untuk mengisi username dan password MongoDB sesuai yang telah dikonfigurasi sebelumnya untuk NodeBB. 
 Ketika konektivitas terhadap database telah terkonfirmasi, setup akan memberitahu bahwa penginstallan sedang berjalan.
 Karena ini merupakan NodeBB yang masih baru, seorang adminstrator forum harus dibuat. Masukkan informasi administrator yang diinginkan. Ini akan menghasilkan pesan ```NodeBB Setup Complete```.
@@ -132,10 +132,10 @@ $ sudo nano forum.example.com # config entered into file and saved
 $ cd ../sites-enabled
 $ sudo ln -s ../sites-available/forum.example.com
 ```
-Di bawah ini merupakan contoh konfigurasi untuk NodeBB berjalan pada port ```4567```:
+Di bawah ini merupakan contoh konfigurasi untuk NodeBB berjalan pada port ```8000```:
 ```
 server {
-    listen 80;
+    listen 8000;
 
     server_name forum.example.com;
 
@@ -146,7 +146,7 @@ server {
         proxy_set_header Host $http_host;
         proxy_set_header X-NginX-Proxy true;
 
-        proxy_pass http://127.0.0.1:4567;
+        proxy_pass http://127.0.0.1:8000;
         proxy_redirect off;
 
         # Socket.IO Support
@@ -162,9 +162,7 @@ $ sudo systemctl reload nginx
 ```
 
 #### Setelah Instalasi
-Sekarang NodeBB telah terinstall dan berjalan. Seharusnya dapat mengakses ```http://forum.example.com``` dan berinteraksi dengan forum.
-
-***
+Sekarang NodeBB telah terinstall dan berjalan. Seharusnya dapat mengakses ```http://0.0.0.0:8000``` dan berinteraksi dengan forum.
 
 
 ## Konfigurasi (opsional)
