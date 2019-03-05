@@ -16,16 +16,9 @@ Untuk menginstall NodeBB diperlukan aplikasi berikut yang harus diinstall
 
 ### Persiapan
 
-Pada laporan ini kami menggunakan operating sistem Ubuntu Server 18.04 pada Virtual Box.
+Pada laporan ini kami menggunakan operating sistem Ubuntu Server 18.04 pada Virtual Box dan juga Docker untuk melakukan otomasi untuk menginstall pada komputer host. 
 
 ### Langkah Langkah Instalasi
-***
-CHECK LAGI YA :""
-ntar isiin dari sini
-https://docs.nodebb.org/installing/os/ubuntu/
-***
-
-***
 #### Instalasi Node.js
 1. Instalasi Node.js melalui terminal
 ```
@@ -237,6 +230,17 @@ $ ./nodebb upgrade
 Jika upgrade berhasil, jalankan kembali NodeBB. NodeBB yang dijalankan adalah versi terbaru.
 
 ## Otomatisasi
+### Instalasi & Konfigurasi
+
+Untuk melakukan otomasi pada penginstalan nodebb, terdapat docker-compose file pada dokumentasi program.
+
+`cd nodebb_docker`
+
+Isikan pada env
+
+`docker-compose up`
+
+
 
 Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
 
@@ -281,3 +285,5 @@ https://community.nodebb.org/topic/10827/why-i-chose-to-use-nodebb-over-phpbb-di
 https://www.reddit.com/r/webdev/comments/415nlp/discourse_flarum_nodebb_oh_my/
 https://www.comparakeet.com/forum-software/nodebb-review/
 https://www.slant.co/versus/2789/2791/~discourse_vs_nodebb
+https://github.com/digitalLumberjack/docker-nodebb/
+https://gitlab.com/recalbox/ops/nodebb
