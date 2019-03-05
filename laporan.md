@@ -187,7 +187,7 @@ Plugin untuk fungsi tambahan
 
 ### Update
 
-1. Nonaktifkan Forum
+#### Nonaktifkan Forum
 Update dapat dilakukan selagi forum aktif. Namun, direkomendasikan untuk menonaktifkan forum untuk Update
 
 ```
@@ -195,7 +195,7 @@ $ cd /path/to/nodebb
 $ ./nodebb stop
 ```
 
-2. Backup Data
+#### Backup Data
 Selanjutnya, lakukan backup data Redis ```.rdb```. Database utama Redis tersimpan di ```/var/lib/redis/dump.rdb```.
 
 Setelah itu, lakukan back up pada MongoDB yang didahului dengan mematikan MongoDB ```sudo service mongodb stop```.
