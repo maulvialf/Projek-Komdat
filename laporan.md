@@ -187,13 +187,25 @@ Plugin untuk fungsi tambahan
 
 ### Update
 
+1. Nonaktifkan Forum
 Update dapat dilakukan selagi forum aktif. Namun, direkomendasikan untuk menonaktifkan forum untuk Update
 
 ```
 $ cd /path/to/nodebb
 $ ./nodebb stop
 ```
-Selanjutnya, lakukan backup data ```.rdb```. Database utama tersimpan di ```/var/lib/redis/dump.rdb```.
+
+2. Backup Data
+Selanjutnya, lakukan backup data Redis ```.rdb```. Database utama Redis tersimpan di ```/var/lib/redis/dump.rdb```.
+
+Setelah itu, lakukan back up pada MongoDB yang didahului dengan mematikan MongoDB ```sudo service mongodb stop```.
+Jalankan ```mongodump``` untuk mem-backup MongoDB. Perintah tersebut akan membuat struktur direktori yang bisa di-restore.
+
+Backup selanjutnya dilakukan pada Avatar
+```
+$ cd /path/to/nodebb/public
+$ tar -czf ~/nodebb_assets.tar.gz ./uploads
+```
 
 ## Otomatisasi
 
