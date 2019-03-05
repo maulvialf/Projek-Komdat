@@ -186,11 +186,14 @@ Plugin untuk fungsi tambahan
 ##  Maintenance
 
 ### Update
-***
-ntar isiin dari sini
-https://docs.nodebb.org/configuring/upgrade/
-***
 
+Update dapat dilakukan selagi forum aktif. Namun, direkomendasikan untuk menonaktifkan forum untuk Update
+
+```
+$ cd /path/to/nodebb
+$ ./nodebb stop
+```
+Selanjutnya, lakukan backup data ```.rdb```. Database utama tersimpan di ```/var/lib/redis/dump.rdb```.
 
 ## Otomatisasi
 
