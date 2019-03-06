@@ -1,7 +1,6 @@
 # NodeBB
 
 ## Daftar Isi
-- [NodeBB](#nodebb)
   * [Sekilas Tentang](#sekilas-tentang)
   * [Instalasi](#instalasi)
     + [Requirements](#requirements)
@@ -29,7 +28,6 @@
     + [Bandingkan dengan aplikasi web kelompok lain yang sejenis](#bandingkan-dengan-aplikasi-web-kelompok-lain-yang-sejenis)
   * [Referensi](#referensi)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ## Sekilas Tentang
 
