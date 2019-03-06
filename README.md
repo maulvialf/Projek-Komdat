@@ -215,6 +215,8 @@ Buka pada browser http://0.0.0.0:8000. Jika berhasil. Selamat anda telah berhasi
 
 Sekarang NodeBB telah terinstall dan berjalan. Seharusnya dapat mengakses ```http://0.0.0.0:8000``` dan berinteraksi dengan forum.
 
+## http://203.34.118.250:4567/
+
 ##  Maintenance
 
 #### Nonaktifkan Forum
