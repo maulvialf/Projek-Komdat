@@ -301,9 +301,12 @@ Jika konfigurasi sudah diisi. Run docker dengan perintah
 ```
 docker-compose up
 ```
+<h1 align='center'>
 <a href="http://i.imgur.com/jg0obbO.png">
   <img src="http://imgur.com/jg0obbOl.png" />
 </a>
+</h1>
+
 Jika mongo db sudah dimiliki diluar docker, anda dapat menggunakan mongo db luar tanpa harus menginstall mongoddb didalam docker. Ini berguna apabila ingin menggunakan database lama untuk migrasi perangkat ke dalam docker
 ```
 sudo docker run --env-file=./nodebb.env -ti digitallumberjack/docker-nodebb:latest
