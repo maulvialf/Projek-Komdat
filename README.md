@@ -1,17 +1,39 @@
-# Aplikasi Forum berbasis Web NodeBB dengan teknologi NodeJS
+# NodeBB
 
+## Daftar Isi
+- [NodeBB](#nodebb)
+  * [Sekilas Tentang](#sekilas-tentang)
+  * [Instalasi](#instalasi)
+    + [Requirements](#requirements)
+    + [Persiapan](#persiapan)
+    + [Langkah Langkah Instalasi](#langkah-langkah-instalasi)
+      - [Instalasi Node.js](#instalasi-nodejs)
+      - [Menginstall MongoDB](#menginstall-mongodb)
+      - [Konfigurasi MongoDB](#konfigurasi-mongodb)
+      - [Menginstall NodeBB](#menginstall-nodebb)
+      - [Menginstall nginx](#menginstall-nginx)
+      - [Konfigurasi nginx](#konfigurasi-nginx)
+      - [Setelah Instalasi](#setelah-instalasi)
+  * [Konfigurasi (opsional)](#konfigurasi--opsional-)
+  * [Maintenance](#maintenance)
+    + [Update](#update)
+      - [Nonaktifkan Forum](#nonaktifkan-forum)
+      - [Backup Data](#backup-data)
+      - [Mengambil kode terbaru](#mengambil-kode-terbaru)
+      - [Menjalankan skrip upgrade NodeBB](#menjalankan-skrip-upgrade-nodebb)
+  * [Otomatisasi](#otomatisasi)
+    + [Instalasi & Konfigurasi](#instalasi---konfigurasi)
+  * [Cara Pemakaian](#cara-pemakaian)
+  * [Pembahasan](#pembahasan)
+    + [Pendapat anda tentang aplikasi web ini](#pendapat-anda-tentang-aplikasi-web-ini)
+    + [Bandingkan dengan aplikasi web kelompok lain yang sejenis](#bandingkan-dengan-aplikasi-web-kelompok-lain-yang-sejenis)
+  * [Referensi](#referensi)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 ## Sekilas Tentang
 
 NodeBB adalah aplikasi komunitas berbasis forum web. NodeBB berbasis pada NodeJS dan dibuat dengan sistem caching redis dan database MongoDB. NodeBB memiliki banyak fitur seperti notifikasi realtime dan interaksi langsung.
-
-## Daftar Isi
-1. Instalasi 
-2. Konfigurasi
-3. Maintenance
-4. Otomasi
-5. Cara Pemakaian
-6. Pembahasan
 
 ## Instalasi
 
