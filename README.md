@@ -1,4 +1,4 @@
-<img alt="" class=" forum-logo" src="http://nodebb.org/assets/uploads/system/site-logo.png?v=6tanq3ld65i">
+<img alt="" class=" forum-logo" src="https://www.devporto.com/wp-content/uploads/2016/05/nodebblogo.jpg">
 
 <h1 style="font-size: 70px;" align = center >NodeBB</h1>
 
