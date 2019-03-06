@@ -1,32 +1,38 @@
 <h1 style="font-size: 70px;" align = center >NodeBB</h1>
 
 ## Daftar Isi
-  * [Sekilas Tentang](#sekilas-tentang)
-  * [Instalasi](#instalasi)
-    + [Requirements](#requirements)
-    + [Persiapan](#persiapan)
-    + [Langkah Langkah Instalasi](#langkah-langkah-instalasi)
-      - [Instalasi Node.js](#instalasi-nodejs)
-      - [Menginstall MongoDB](#menginstall-mongodb)
-      - [Konfigurasi MongoDB](#konfigurasi-mongodb)
-      - [Menginstall NodeBB](#menginstall-nodebb)
-      - [Menginstall nginx](#menginstall-nginx)
-      - [Konfigurasi nginx](#konfigurasi-nginx)
-      - [Setelah Instalasi](#setelah-instalasi)
-  * [Konfigurasi (opsional)](#konfigurasi--opsional-)
-  * [Maintenance](#maintenance)
-    + [Update](#update)
-      - [Nonaktifkan Forum](#nonaktifkan-forum)
-      - [Backup Data](#backup-data)
-      - [Mengambil kode terbaru](#mengambil-kode-terbaru)
-      - [Menjalankan skrip upgrade NodeBB](#menjalankan-skrip-upgrade-nodebb)
-  * [Otomatisasi](#otomatisasi)
-    + [Instalasi & Konfigurasi](#instalasi---konfigurasi)
-  * [Cara Pemakaian](#cara-pemakaian)
-  * [Pembahasan](#pembahasan)
-    + [Pendapat anda tentang aplikasi web ini](#pendapat-anda-tentang-aplikasi-web-ini)
-    + [Bandingkan dengan aplikasi web kelompok lain yang sejenis](#bandingkan-dengan-aplikasi-web-kelompok-lain-yang-sejenis)
-  * [Referensi](#referensi)
+- [Daftar Isi](#daftar-isi)
+- [Sekilas Tentang](#sekilas-tentang)
+- [Instalasi](#instalasi)
+  * [Requirements](#requirements)
+  * [Persiapan](#persiapan)
+  * [Langkah Langkah Instalasi](#langkah-langkah-instalasi)
+    + [Instalasi Node.js](#instalasi-nodejs)
+    + [Menginstall MongoDB](#menginstall-mongodb)
+    + [Konfigurasi MongoDB](#konfigurasi-mongodb)
+    + [Menginstall NodeBB](#menginstall-nodebb)
+    + [Menginstall nginx](#menginstall-nginx)
+    + [Konfigurasi nginx](#konfigurasi-nginx)
+    + [Setelah Instalasi](#setelah-instalasi)
+- [Maintenance](#maintenance)
+  * [Update](#update)
+    + [Nonaktifkan Forum](#nonaktifkan-forum)
+    + [Backup Data](#backup-data)
+    + [Mengambil kode terbaru](#mengambil-kode-terbaru)
+    + [Menjalankan skrip upgrade NodeBB](#menjalankan-skrip-upgrade-nodebb)
+- [Otomatisasi](#otomatisasi)
+  * [Instalasi & Konfigurasi](#instalasi---konfigurasi)
+- [Cara Pemakaian](#cara-pemakaian)
+  * [Membuat akun](#membuat-akun)
+  * [Membuat postingan](#membuat-postingan)
+  * [Mereply](#mereply)
+  * [Melakukan Chat](#melakukan-chat)
+  * [Dashboard Admin](#dashboard-admin)
+  * [Mengganti tema](#mengganti-tema)
+- [Pembahasan](#pembahasan)
+  * [Pendapat anda tentang aplikasi web ini](#pendapat-anda-tentang-aplikasi-web-ini)
+  * [Bandingkan dengan aplikasi web kelompok lain yang sejenis](#bandingkan-dengan-aplikasi-web-kelompok-lain-yang-sejenis)
+- [Referensi](#referensi)
 
 ## Sekilas Tentang
 
@@ -187,12 +193,14 @@ $ sudo systemctl reload nginx
 
 #### Setelah Instalasi
 
+Berikut adalah hasil log dari `./nodebb log`. Terlihat program melisten pada port tersebut.
 <h1 align='center'>
 <a href="http://i.imgur.com/hTLEniQ.png">
   <img src="http://i.imgur.com/hTLEniQ.png" />
 </a>
 </h1>
 
+Buka pada browser http://0.0.0.0:8000. Jika berhasil. Selamat anda telah berhasil menginstall NodeBB
 <h1 align='center'>
 <a href="http://i.imgur.com/GnnQK0H.png">
   <img src="http://imgur.com/GnnQK0Hl.png" />
@@ -202,8 +210,6 @@ $ sudo systemctl reload nginx
 Sekarang NodeBB telah terinstall dan berjalan. Seharusnya dapat mengakses ```http://0.0.0.0:8000``` dan berinteraksi dengan forum.
 
 ##  Maintenance
-
-### Update
 
 #### Nonaktifkan Forum
 Update dapat dilakukan selagi forum aktif. Namun, direkomendasikan untuk menonaktifkan forum untuk Update
@@ -250,7 +256,6 @@ Untuk NodeBB v0.3.0 ke atas, jalankan perintah berikut:
 ```
 $ ./nodebb upgrade
 ```
-
 
 Jika upgrade berhasil, jalankan kembali NodeBB. NodeBB yang dijalankan adalah versi terbaru.
 
@@ -337,36 +342,48 @@ Hasil postingan
 </h1>
 
 ### Mereply
+<h1 align='center'>
 <a href="http://i.imgur.com/sf2lTAQ.png">
   <img src="http://imgur.com/sf2lTAQl.png" />
 </a>
+</h1>
 
+<h1 align='center'>
 <a href="http://i.imgur.com/0wd7tsf.png">
   <img src="http://imgur.com/0wd7tsfl.png" />
 </a>
+</h1>
 
 ### Melakukan Chat
+<h1 align='center'>
 <a href="http://i.imgur.com/xwpntgW.png">
   <img src="http://imgur.com/xwpntgWl.png" />
 </a>
-
+</h1>
+<h1 align='center'>
 <a href="http://i.imgur.com/4cI3JIh.png">
   <img src="http://imgur.com/4cI3JIhl.png" />
 </a>
+</h1>
 
 ### Dashboard Admin
+<h1 align='center'>
 <a href="http://i.imgur.com/d4vtMWY.png">
   <img src="http://imgur.com/d4vtMWYl.png" />
 </a>
 
 ### Mengganti tema
+<h1 align='center'>
 <a href="http://i.imgur.com/r7CV4WW.png">
   <img src="http://imgur.com/r7CV4WWl.png" />
 </a>
+</h1>
 
+<h1 align='center'>
 <a href="http://i.imgur.com/KLmlRz5.png">
   <img src="http://imgur.com/KLmlRz5l.png" />
 </a>
+</h1>
 
 ## Pembahasan
 
