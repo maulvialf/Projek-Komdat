@@ -187,7 +187,21 @@ $ sudo systemctl reload nginx
 ```
 
 #### Setelah Instalasi
+
+<h1 align='center'>
+<a href="http://i.imgur.com/hTLEniQ.png">
+  <img src="http://i.imgur.com/hTLEniQ.png" />
+</a>
+</h1>
+
+<h1 align='center'>
+<a href="http://i.imgur.com/GnnQK0H.png">
+  <img src="http://imgur.com/GnnQK0Hl.png" />
+</a>
+</h1>
+
 Sekarang NodeBB telah terinstall dan berjalan. Seharusnya dapat mengakses ```http://0.0.0.0:8000``` dan berinteraksi dengan forum.
+
 
 
 ## Konfigurasi (opsional)
@@ -320,7 +334,6 @@ Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
 - Tampilan aplikasi web
 - Fungsi-fungsi utama
 - Isi dengan data real/dummy (jangan kosongan) dan sertakan beberapa screenshot
-
 
 ## Pembahasan
 
