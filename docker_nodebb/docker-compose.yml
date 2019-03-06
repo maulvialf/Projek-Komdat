@@ -4,7 +4,7 @@ mongo:
     - 27017:27017
 
 nodebb:
-  image: registry.gitlab.com/recalbox/ops/nodebb/nodebb:latest
+  image: digitallumberjack/docker-nodebb:latest
   links:
     - mongo:mongo
   env_file:
