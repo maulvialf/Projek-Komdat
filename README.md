@@ -1,3 +1,5 @@
+<img alt="" class=" forum-logo" src="http://nodebb.org/assets/uploads/system/site-logo.png?v=6tanq3ld65i">
+
 <h1 style="font-size: 70px;" align = center >NodeBB</h1>
 
 ## Daftar Isi
@@ -52,6 +54,7 @@ Untuk menginstall NodeBB diperlukan aplikasi berikut yang harus diinstall
 Pada laporan ini kami menggunakan operating sistem Ubuntu Server 18.04 pada Virtual Box dan juga Docker untuk melakukan otomasi untuk menginstall pada komputer host. 
 
 ### Langkah Langkah Instalasi
+
 #### Instalasi Node.js
 1. Instalasi Node.js melalui terminal
 ```
