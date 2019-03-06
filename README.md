@@ -1,4 +1,5 @@
-# NodeBB
+<h1 style="font-size: 70px;" align = center >NodeBB</h1>
+
 
 ## Daftar Isi
   * [Sekilas Tentang](#sekilas-tentang)
