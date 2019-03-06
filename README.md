@@ -1,3 +1,4 @@
+
 <img alt="" class=" forum-logo" src="https://www.devporto.com/wp-content/uploads/2016/05/nodebblogo.jpg">
 
 <h1 style="font-size: 70px;" align = center >NodeBB</h1>
@@ -197,6 +198,7 @@ $ sudo systemctl reload nginx
 #### Setelah Instalasi
 
 Berikut adalah hasil log dari `./nodebb log`. Terlihat program melisten pada port tersebut.
+
 <h1 align='center'>
 <a href="http://i.imgur.com/hTLEniQ.png">
   <img src="http://i.imgur.com/hTLEniQ.png" />
@@ -204,6 +206,7 @@ Berikut adalah hasil log dari `./nodebb log`. Terlihat program melisten pada por
 </h1>
 
 Buka pada browser http://0.0.0.0:8000. Jika berhasil. Selamat anda telah berhasil menginstall NodeBB
+
 <h1 align='center'>
 <a href="http://i.imgur.com/GnnQK0H.png">
   <img src="http://imgur.com/GnnQK0Hl.png" />
@@ -309,6 +312,7 @@ Jika konfigurasi sudah diisi. Run docker dengan perintah
 ```
 docker-compose up
 ```
+
 <h1 align='center'>
 <a href="http://i.imgur.com/jg0obbO.png">
   <img src="http://imgur.com/jg0obbOl.png" />
@@ -323,21 +327,25 @@ sudo docker run --env-file=./nodebb.env -ti digitallumberjack/docker-nodebb:late
 ## Cara Pemakaian
 
 ### Membuat akun
-Untuk membuat akun. Tinggal mengklik register dan mengisikan form
+Untuk membuat akun. Tinggal mengklik register dan mengisikan form. Mencentang agreement. Dan akun baru sudah dapat dibuat
 <h1 align='center'>
 <a href="http://i.imgur.com/j7qtnZM.png">
   <img src="http://imgur.com/j7qtnZMl.png" />
 </a>
 </h1>
 
+
 ### Membuat postingan
+Untuk membuat postingan, masuk ke categories, lalu klik new topic. Isikan isi postingan categories dan berbagai macamnya
+
 <h1 align='center'>
 <a href="http://i.imgur.com/Yai1h5o.png">
   <img src="http://imgur.com/Yai1h5ol.png" />
 </a>
 </h1>
 
-Hasil postingan
+Berikut adalah hasil postingan
+
 <h1 align='center'>
 <a href="http://i.imgur.com/T1YzhRU.png">
   <img src="http://imgur.com/T1YzhRUl.png" />
@@ -345,11 +353,16 @@ Hasil postingan
 </h1>
 
 ### Mereply
+
+Untuk mereply klik reply pada postingan bersangkutan
+
 <h1 align='center'>
 <a href="http://i.imgur.com/sf2lTAQ.png">
   <img src="http://imgur.com/sf2lTAQl.png" />
 </a>
 </h1>
+
+Jika sudah selesai, pilih submit.
 
 <h1 align='center'>
 <a href="http://i.imgur.com/0wd7tsf.png">
@@ -358,11 +371,17 @@ Hasil postingan
 </h1>
 
 ### Melakukan Chat
+
+Untuk melakukan chat. Kunjungi user yang ingin dichat, klik tombol titik tiga di sebelah kanan, lalu pilih start new chat.
+
 <h1 align='center'>
 <a href="http://i.imgur.com/xwpntgW.png">
   <img src="http://imgur.com/xwpntgWl.png" />
 </a>
 </h1>
+
+Ketikan chat. Lalu tekan enter.
+
 <h1 align='center'>
 <a href="http://i.imgur.com/4cI3JIh.png">
   <img src="http://imgur.com/4cI3JIhl.png" />
@@ -370,17 +389,56 @@ Hasil postingan
 </h1>
 
 ### Dashboard Admin
+
+Terdapat dashboard admin pada nodeBB. Untuk memasuki dashboard admin, terlebih dahulu login sebagai administrator. Setelah login, masuk ke http://0.0.0.0/admin
+
+Berikut adalah tampilan dari dashboard
+
 <h1 align='center'>
 <a href="http://i.imgur.com/d4vtMWY.png">
   <img src="http://imgur.com/d4vtMWYl.png" />
 </a>
+</h1>
+
+Menu General pada admin
+
+<a href="http://i.imgur.com/dOI30TH.png">
+  <img src="http://imgur.com/dOI30THl.png" />
+</a>
+
+Menu Manage 
+
+<a href="http://i.imgur.com/knhEpTX.png">
+  <img src="http://imgur.com/knhEpTXl.png" />
+</a>
+
+Pada nodebb juga dapat menambahkan plugin contohnya yaitu Markdown. Berikut settingan plugin markdown pada nodebb
+
+<a href="http://i.imgur.com/MMW9S11.png">
+  <img src="http://imgur.com/MMW9S11l.png" />
+</a>
+
+Penggunaan markdown pada postingan / reply dapat dilihat di
+
+<a href="http://i.imgur.com/ebiZnHe.png">
+  <img src="http://imgur.com/ebiZnHel.png" />
+</a>
+
+Kita dapat memasukkan snippet code. Menginsert gambar. Hyperlink dan hal lain yang dapat dilakukan di markdown
 
 ### Mengganti tema
+
+Untuk mengganti tema. Klik profie user pada kanan atas. Lalu pilih setting
+
 <h1 align='center'>
 <a href="http://i.imgur.com/r7CV4WW.png">
   <img src="http://imgur.com/r7CV4WWl.png" />
 </a>
 </h1>
+
+Pada setting ini kita dapat mengubah berbagai macam pengaturan pada profile kita. Kita coba untuk mengubah tema profile. Pilih select a skin. Dan coba ubah menjadi Flatly
+
+Berikut hasilnya
 
 <h1 align='center'>
 <a href="http://i.imgur.com/KLmlRz5.png">
@@ -403,7 +461,8 @@ Hasil postingan
   2. Tidak ada pengembalian, sehingga bila tidak menjadi hosting uang yang telah diberikan tidak akan dikembalikan kepada client
 
 ### Bandingkan dengan aplikasi web kelompok lain yang sejenis
-  Perbandingan Nodebb dengan discourse
+Perbandingan Nodebb dengan discourse
+
   1. Untuk kemudahan penginstalan dan penggunaan Nodebb lebih unggul dibandingkan discourse dikarenakan penginstalan discourse menuntut pengguna telah memahami pengetahuan tentang server. Sedangkan dengan nodebb penginstalan tidak menuntut pengetahuan server semendalam saat menginstall discourse.
   2. Discourse tidak memiliki _free version_ sehingga jika ingin menggunakan discourse pengguna harus membeli terlebih dahulu, sedangkan nodebb memiliki _free version_ sehingga kita dapat mencoba terlebih dahulu apakah cocok atau tidak.
   3. Nodebb memiliki fitur live chat, sedangkan discourse tidak. Sehingga dengan menggunakan nodebb forum akan menjadi lebih menarik dan interaktif.
