@@ -6,7 +6,12 @@
 NodeBB adalah aplikasi komunitas berbasis forum web. NodeBB berbasis pada NodeJS dan dibuat dengan sistem caching redis dan database MongoDB. NodeBB memiliki banyak fitur seperti notifikasi realtime dan interaksi langsung.
 
 ## Daftar Isi
-soon
+1. Instalasi 
+2. Konfigurasi
+3. Maintenance
+4. Otomasi
+5. Cara Pemakaian
+6. Pembahasan
 
 ## Instalasi
 
@@ -123,6 +128,7 @@ Dan service-nya akan berjalan
 $ sudo systemctl start nginx
 $ sudo systemctl status nginx
 ```
+![nginxstatus](/screenshot/work documentation/Screenshot_2019-03-06_08-47-44.png  "nginxstatus")
 
 #### Konfigurasi nginx
 Berikut adalah contoh commands untuk membuat konfiguras nginx baru:
