@@ -201,20 +201,6 @@ $ sudo systemctl reload nginx
 
 Sekarang NodeBB telah terinstall dan berjalan. Seharusnya dapat mengakses ```http://0.0.0.0:8000``` dan berinteraksi dengan forum.
 
-
-
-## Konfigurasi (opsional)
-
-Setting tambahan yang diperlukan untuk meningkatkan fungsi dan kinerja aplikasi, misalnya:
-- batas upload file
-- batas memori
-- etc.
-
-Plugin untuk fungsi tambahan
-- single log-on
-- etc.
-
-
 ##  Maintenance
 
 ### Update
@@ -269,6 +255,7 @@ $ ./nodebb upgrade
 Jika upgrade berhasil, jalankan kembali NodeBB. NodeBB yang dijalankan adalah versi terbaru.
 
 ## Otomatisasi
+
 ### Instalasi & Konfigurasi
 
 Untuk melakukan otomasi pada penginstalan nodebb, terdapat docker-compose file pada dokumentasi program. Keuntungan dengan menggunakan docker adalah penginstalan dapat dilakukan dengan scripting dan apabila terdapat bug pada nodebb tidak akan mempengaruhi server karena berada dalam image sendiri.
@@ -350,25 +337,50 @@ Hasil postingan
 </h1>
 
 ### Mereply
+<a href="http://i.imgur.com/sf2lTAQ.png">
+  <img src="http://imgur.com/sf2lTAQl.png" />
+</a>
+
+<a href="http://i.imgur.com/0wd7tsf.png">
+  <img src="http://imgur.com/0wd7tsfl.png" />
+</a>
 
 ### Melakukan Chat
+<a href="http://i.imgur.com/xwpntgW.png">
+  <img src="http://imgur.com/xwpntgWl.png" />
+</a>
+
+<a href="http://i.imgur.com/4cI3JIh.png">
+  <img src="http://imgur.com/4cI3JIhl.png" />
+</a>
 
 ### Dashboard Admin
+<a href="http://i.imgur.com/d4vtMWY.png">
+  <img src="http://imgur.com/d4vtMWYl.png" />
+</a>
 
-### Comment and Feedback
+### Mengganti tema
+<a href="http://i.imgur.com/r7CV4WW.png">
+  <img src="http://imgur.com/r7CV4WWl.png" />
+</a>
+
+<a href="http://i.imgur.com/KLmlRz5.png">
+  <img src="http://imgur.com/KLmlRz5l.png" />
+</a>
 
 ## Pembahasan
 
 ### Pendapat anda tentang aplikasi web ini
-	- pros: 
-		1. Integrasi sosial yang mudah, dengan node bb pengguna dapat dengan mudah membagikan konten dengan social media seperti facebook atau twitter. Sehingga mempermudah memperkenalkan dan mempublikasikan forum disocial media yang diinginkan.
-    2. Optimalisasi yang fleksibel, dengan menggunakan nodebb forum secara otomatis akan dioptimalkan _mobile view_ sehingga forum dapat diakses dimana saja, kapan saja, dengan segala device.
-    3. Nodebb juga dapat menerjemahkan forum  hingga dengan 50 bahasa, sehingga forum dapat menjangkau seluruh dunia tanpa batasan bahasa.
-    4. Dengan Nodebb forum juga dapat mencantumkan file media seperti foto, video, dan rekaman suara. Sehingga post didalam forum dapat menjadi jauh lebih menarik.
+
+- pros:
+  1. Integrasi sosial yang mudah, dengan node bb pengguna dapat dengan mudah membagikan konten dengan social media seperti facebook atau twitter. Sehingga mempermudah memperkenalkan dan mempublikasikan forum disocial media yang diinginkan.
+  2. Optimalisasi yang fleksibel, dengan menggunakan nodebb forum secara otomatis akan dioptimalkan _mobile view_ sehingga forum dapat diakses dimana saja, kapan saja, dengan segala device.
+  3. Nodebb juga dapat menerjemahkan forum  hingga dengan 50 bahasa, sehingga forum dapat menjangkau seluruh dunia tanpa batasan bahasa.
+  4. Dengan Nodebb forum juga dapat mencantumkan file media seperti foto, video, dan rekaman suara. Sehingga post didalam forum dapat menjadi jauh lebih menarik.
 	
-  - cons:
-    1. Harga yang termasuk mahal, hosting menggunakan nodebb tidak terbilang murah. _Open source version_ menuntut pengguna untuk memahami program tersebut atau _Not user friendly_ .
-    2. Tidak ada pengembalian, sehingga bila tidak menjadi hosting uang yang telah diberikan tidak akan dikembalikan kepada client
+- cons:
+  1. Harga yang termasuk mahal, hosting menggunakan nodebb tidak terbilang murah. _Open source version_ menuntut pengguna untuk memahami program tersebut atau _Not user friendly_ .
+  2. Tidak ada pengembalian, sehingga bila tidak menjadi hosting uang yang telah diberikan tidak akan dikembalikan kepada client
 
 ### Bandingkan dengan aplikasi web kelompok lain yang sejenis
   Perbandingan Nodebb dengan discourse
