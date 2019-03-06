@@ -1,6 +1,5 @@
 <h1 style="font-size: 70px;" align = center >NodeBB</h1>
 
-
 ## Daftar Isi
   * [Sekilas Tentang](#sekilas-tentang)
   * [Instalasi](#instalasi)
@@ -28,7 +27,6 @@
     + [Pendapat anda tentang aplikasi web ini](#pendapat-anda-tentang-aplikasi-web-ini)
     + [Bandingkan dengan aplikasi web kelompok lain yang sejenis](#bandingkan-dengan-aplikasi-web-kelompok-lain-yang-sejenis)
   * [Referensi](#referensi)
-
 
 ## Sekilas Tentang
 
@@ -305,7 +303,7 @@ SSMTP_DOMAIN=smtp.gmail.com
 SSMTP_EMAIL=maulvi_alfansuri@apps.ipb.ac.id
 SSMTP_HOST=smtp.gmail.com
 SSMTP_PORT=465
-SSMTP_PASSWORD=disensorgan
+SSMTP_PASSWORD=****
 AWS_ACCESS_KEY_ID=
 AWS_SECRET_ACCESS_KEY=
 S3_UPLOADS_BUCKET=
@@ -327,14 +325,37 @@ Jika mongo db sudah dimiliki diluar docker, anda dapat menggunakan mongo db luar
 sudo docker run --env-file=./nodebb.env -ti digitallumberjack/docker-nodebb:latest
 ```
 
-Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
-
-
 ## Cara Pemakaian
 
-- Tampilan aplikasi web
-- Fungsi-fungsi utama
-- Isi dengan data real/dummy (jangan kosongan) dan sertakan beberapa screenshot
+### Membuat akun
+Untuk membuat akun. Tinggal mengklik register dan mengisikan form
+<h1 align='center'>
+<a href="http://i.imgur.com/j7qtnZM.png">
+  <img src="http://imgur.com/j7qtnZMl.png" />
+</a>
+</h1>
+
+### Membuat postingan
+<h1 align='center'>
+<a href="http://i.imgur.com/Yai1h5o.png">
+  <img src="http://imgur.com/Yai1h5ol.png" />
+</a>
+</h1>
+
+Hasil postingan
+<h1 align='center'>
+<a href="http://i.imgur.com/T1YzhRU.png">
+  <img src="http://imgur.com/T1YzhRUl.png" />
+</a>
+</h1>
+
+### Mereply
+
+### Melakukan Chat
+
+### Dashboard Admin
+
+### Comment and Feedback
 
 ## Pembahasan
 
