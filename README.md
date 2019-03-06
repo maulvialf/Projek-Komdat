@@ -402,27 +402,35 @@ Berikut adalah tampilan dari dashboard
 
 Menu General pada admin
 
+<h1 align='center'>
 <a href="http://i.imgur.com/dOI30TH.png">
   <img src="http://imgur.com/dOI30THl.png" />
 </a>
+</h1>
 
 Menu Manage 
 
+<h1 align='center'>
 <a href="http://i.imgur.com/knhEpTX.png">
   <img src="http://imgur.com/knhEpTXl.png" />
 </a>
+</h1>
 
 Pada nodebb juga dapat menambahkan plugin contohnya yaitu Markdown. Berikut settingan plugin markdown pada nodebb
 
+<h1 align='center'>
 <a href="http://i.imgur.com/MMW9S11.png">
   <img src="http://imgur.com/MMW9S11l.png" />
 </a>
+</h1>
 
 Penggunaan markdown pada postingan / reply dapat dilihat di
 
+<h1 align='center'>
 <a href="http://i.imgur.com/ebiZnHe.png">
   <img src="http://imgur.com/ebiZnHel.png" />
 </a>
+</h1>
 
 Kita dapat memasukkan snippet code. Menginsert gambar. Hyperlink dan hal lain yang dapat dilakukan di markdown
 
