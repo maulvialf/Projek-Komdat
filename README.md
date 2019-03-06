@@ -148,7 +148,6 @@ Dan service-nya akan berjalan
 $ sudo systemctl start nginx
 $ sudo systemctl status nginx
 ```
-![nginxstatus](/screenshot/work documentation/Screenshot_2019-03-06_08-47-44.png  "nginxstatus")
 
 #### Konfigurasi nginx
 Berikut adalah contoh commands untuk membuat konfiguras nginx baru:
@@ -161,7 +160,7 @@ $ sudo ln -s ../sites-available/forum.example.com
 Di bawah ini merupakan contoh konfigurasi untuk NodeBB berjalan pada port ```8000```:
 ```
 server {
-    listen 8000;
+    listen 80;
 
     server_name forum.example.com;
 
@@ -302,6 +301,9 @@ Jika konfigurasi sudah diisi. Run docker dengan perintah
 ```
 docker-compose up
 ```
+<a href="http://i.imgur.com/jg0obbO.png">
+  <img src="http://imgur.com/jg0obbOl.png" />
+</a>
 Jika mongo db sudah dimiliki diluar docker, anda dapat menggunakan mongo db luar tanpa harus menginstall mongoddb didalam docker. Ini berguna apabila ingin menggunakan database lama untuk migrasi perangkat ke dalam docker
 ```
 sudo docker run --env-file=./nodebb.env -ti digitallumberjack/docker-nodebb:latest
@@ -342,14 +344,13 @@ Skrip shell untuk otomatisasi instalasi, konfigurasi, dan maintenance.
 ## Referensi
 
 Cantumkan tiap sumber informasi yang anda pakai.
-- <https://docs.nodebb.org/installing/os/ubuntu/>
-- <https://nodebb.org/>
-- <https://github.com/NodeBB/NodeBB>
-- <https://www.howtoforge.com/how-to-install-nodebb-forum-on-ubuntu-1804-lts/>
-- <https://www.slant.co/versus/2789/2791/~discourse_vs_nodebb>
-- <https://community.nodebb.org/topic/10827/why-i-chose-to-use-nodebb-over-phpbb-discourse-mybb-and-other-forums>
-- <https://www.reddit.com/r/webdev/comments/415nlp/discourse_flarum_nodebb_oh_my/>
-- <https://www.comparakeet.com/forum-software/nodebb-review/>
-- <https://www.slant.co/versus/2789/2791/~discourse_vs_nodebb>
-- <https://github.com/digitalLumberjack/docker-nodebb/>
-- <https://gitlab.com/recalbox/ops/nodebb>
+- <https://docs.nodebb.org/installing/os/ubuntu/> - nodeBB Installation
+- <https://nodebb.org/> - nodeBB official
+- <https://github.com/NodeBB/NodeBB> - nodeBB github source
+- <https://www.howtoforge.com/how-to-install-nodebb-forum-on-ubuntu-1804-lts/> - nodeBB Installation
+- <https://www.slant.co/versus/2789/2791/~discourse_vs_nodebb> - nodeBB vs discourse comparison
+- <https://community.nodebb.org/topic/10827/why-i-chose-to-use-nodebb-over-phpbb-discourse-mybb-and-other-forums> - nodeBB vs discourse comparison
+- <https://www.reddit.com/r/webdev/comments/415nlp/discourse_flarum_nodebb_oh_my/> - nodeBB vs discourse comparison on reddit
+- <https://www.comparakeet.com/forum-software/nodebb-review/> - nodeBB review
+- <https://github.com/digitalLumberjack/docker-nodebb/> - nodeBB docker github
+- <https://gitlab.com/recalbox/ops/nodebb> - nodeBB docker gitlab
